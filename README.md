@@ -1,2 +1,2 @@
-# html-games
-online  html games
+添加游戏首页导航页面
+加入3个游戏，分别是：扫雷、五子棋、俄罗斯方块。
