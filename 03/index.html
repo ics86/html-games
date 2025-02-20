@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>网页俄罗斯方块</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="info-panel">
+            <div class="next-piece">
+                <canvas id="next-piece" width="120" height="120"></canvas>
+                <p>下一个方块</p>
+            </div>
+            <div class="score-board">
+                <h2>得分：<span id="score">0</span></h2>
+                <button id="start-btn">开始游戏</button>
+            </div>
+        </div>
+        <canvas id="game-board" width="300" height="600"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

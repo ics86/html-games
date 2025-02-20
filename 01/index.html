@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页扫雷</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>扫雷游戏</h1>
+        <div class="status-bar">
+            <div class="mines-remaining">剩余：<span id="mines-count">10</span></div>
+            <button id="reset-btn">😊</button>
+            <div class="timer">时间：<span id="time">0</span></div>
+        </div>
+        <div id="grid" class="grid"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
