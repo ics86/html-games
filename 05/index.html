@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>数独游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>数独游戏</h1>
+        <div class="timer-container">
+            <span>用时：</span>
+            <span id="timer">00:00</span>
+        </div>
+        <div class="action-buttons">
+            <button onclick="newGame()">新游戏</button>
+            <button onclick="checkSolution()">检查答案</button>
+        </div>
+        <div id="message"></div>
+        <div id="sudoku-grid"></div>
+        <div class="controls">
+         
+            <div class="number-pad">
+                <button class="num-btn" onclick="fillNumber(1)">1</button>
+<button class="num-btn" onclick="fillNumber(2)">2</button>
+<button class="num-btn" onclick="fillNumber(3)">3</button>
+<button class="num-btn" onclick="fillNumber(4)">4</button>
+<button class="num-btn" onclick="fillNumber(5)">5</button>
+<button class="num-btn" onclick="fillNumber(6)">6</button>
+<button class="num-btn" onclick="fillNumber(7)">7</button>
+<button class="num-btn" onclick="fillNumber(8)">8</button>
+<button class="num-btn" onclick="fillNumber(9)">9</button>
+            </div>
+        </div>
+       
+    </div>
+    <script src="sudoku.js"></script>
+</body>
+</html>

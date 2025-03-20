@@ -1,0 +1,132 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0;
+    background: #666;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin: 20px 0;
+    
+    border: 2px solid #000;
+}
+
+.sudoku-cell {
+    width: 50px;
+    height: 50px;
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    background: white;
+}
+
+.sudoku-cell.selected {
+    background-color: #e3f2fd;
+}
+
+.sudoku-cell.fixed {
+    background: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.number-pad {
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    min-width: 400px;
+    justify-content: flex-start;
+}
+
+.num-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#message {
+    color: #d32f2f;
+    font-size: 18px;
+    height: 25px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    margin: 10px auto;
+  }
+  
+  .sudoku-cell {
+    width: 9vw;
+    height: 9vw;
+    min-width: 30px;
+    min-height: 30px;
+    font-size: 16px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .number-pad {
+    min-width: 100%;
+    justify-content: center;
+    gap: 3px;
+  }
+  
+  .num-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
